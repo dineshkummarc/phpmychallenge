@@ -81,6 +81,32 @@ body {
   transition: transform 300ms ease, -webkit-transform 300ms ease;
 }
 
+.cardview {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  margin: 70px 20px 20px 20px;
+  background: #fff;
+  border-radius: 25px;
+  max-width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: Center;
+  padding: 100px 0 0 0;
+  -webkit-box-shadow: 0 0 60px -15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 60px -15px rgba(0, 0, 0, 0.25);
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  -o-transition: transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
 .colorband {
   height: 2px;
   background-image: -o-linear-gradient(left, #43e97b 0%, #38f9d7 100%);
@@ -101,6 +127,23 @@ body {
 }
 
 #card-3 .colorband {
+  background-image: -o-linear-gradient(315deg, #667eea 0%, #764ba2 100%);
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+#card-4 .colorband {
+  background-image: -o-linear-gradient(left, #43e97b 0%, #38f9d7 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#43e97b), to(#38f9d7));
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+#card-5 .colorband {
+  background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+#card-6 .colorband {
   background-image: -o-linear-gradient(315deg, #667eea 0%, #764ba2 100%);
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
@@ -199,6 +242,23 @@ body {
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
+#card-4 .actions button:hover {
+  background-image: -o-linear-gradient(left, #43e97b 0%, #38f9d7 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#43e97b), to(#38f9d7));
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+#card-5 .actions button:hover {
+  background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+#card-6 .actions button:hover {
+  background-image: -o-linear-gradient(315deg, #667eea 0%, #764ba2 100%);
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
 .actions button>span {
   display: block;
 }
@@ -230,4 +290,43 @@ body {
 
 .avatar svg {
   width: 100%;
+}
+
+.cardview h2 {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+.cardview .title {
+  padding: 0 1rem 1rem;
+  font-size: 0.75em;
+  text-align: center;
+}
+.cardview .desc {
+  padding: 1rem 2rem;
+  font-size: 0.9em;
+}
+
+.cardview .actions {
+  -webkit-transition: -webkit-box-shadow 300ms ease;
+  transition: -webkit-box-shadow 300ms ease;
+  -o-transition: box-shadow 300ms ease;
+  transition: box-shadow 300ms ease;
+  transition: box-shadow 300ms ease, -webkit-box-shadow 300ms ease;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.cardview:hover {
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.cardview:hover .actions {
+/*   padding: 1rem 2rem; */
+/*   box-shadow: 0 -10px 10px -5px rgba(0, 0, 0, 0.04); */
 }
